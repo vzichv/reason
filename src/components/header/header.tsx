@@ -10,7 +10,7 @@ function Header(): JSX.Element {
       </div>
 
       <div className={`${styles.company} ${styles.right}`}>
-        <h1 className={styles.telephone}>+7 (999) 999-99-99</h1> {/* добавить подчёркивание с помощью border */}
+        <h1 className={styles.telephone}>+7 (999) 999-99-99</h1> 
         <span className={styles.workingHours}>На связи с 10:00 до 20:00</span>
         <address className={styles.address}>пр. Троицкий, дом 63, этаж 4, каб. 47</address>
       </div>
