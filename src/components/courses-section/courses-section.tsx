@@ -1,4 +1,4 @@
-import styles from './header.module.sass';
+import styles from './courses-section.module.sass';
 
 function CoursesSection(): JSX.Element {
   return(
