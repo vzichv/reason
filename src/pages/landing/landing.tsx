@@ -3,6 +3,7 @@ import ApplicationSection from './../../components/application-section/applicati
 import CoursesSection from './../../components/courses-section/courses-section';
 import ReviewsSection from './../../components/reviews-section/reviews-section';
 import OfferSection from './../../components/offer-section/offer-section';
+import Footer from './../../components/footer/footer';
 
 function Landing(): JSX.Element {
   return(
@@ -12,6 +13,7 @@ function Landing(): JSX.Element {
       <CoursesSection />
       <ReviewsSection />
       <OfferSection />
+      <Footer />
     </>
   );
 }
