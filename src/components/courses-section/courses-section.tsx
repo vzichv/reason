@@ -4,7 +4,7 @@ import SubsectionHeader from './../subsection-header/subsection-header';
 
 function CoursesSection(): JSX.Element {
   return(
-    <section className={styles.body}>
+    <section>
       <SectionHeader backgroundColor={2} text='Обучение в автошколе!' />
       <SubsectionHeader backgroundColor={2} text='Курсы'/>
       <div className={styles.coursesBlock}>
