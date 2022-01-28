@@ -1,22 +1,29 @@
 @import './../../colors'
 
 .body
-  margin: 15px auto 0px auto
+  margin: 2vh auto 0px auto
   color: $basic-information
   width: 90%
-  max-width: 1300px
 
 .header
   display: flex
   align-items: center
-
+  img
+    width: 10vw
+    height: 10vw
   h1
-    margin-left: 30px
-    font-size: 3.25em
+    margin-left: 3%
+    font-size: 4vw
+    @media screen and (orientation: portrait)
+      font-size: 6vw
 
 .reviewText
-  border-radius: 5px 40px 40px 40px
+  border-radius: 1vw 3vw 3vw 3vw
   background-color: $window
   span
+    font-size: 2vw
     display: block
-    padding: 20px 20px 20px 20px
+    padding: 2vw 2vw 2vw 2vw
+    @media screen and (orientation: portrait)
+      font-size: 4vw
+      padding: 4vw 4vw 4vw 4vw
