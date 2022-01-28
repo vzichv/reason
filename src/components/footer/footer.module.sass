@@ -2,45 +2,70 @@
   
 .body
   width: 100%
-  height: 130px
   background-color: $window
-  margin-top: 65px
+  margin-top: 5vw
 
 .links
   margin: 0 auto
   width: 96%
-  height: 100px
+  padding-bottom: 1.5vw
   display: flex
   justify-content: space-between
-  border-bottom: 1px solid $footer-site-rights
+  border-bottom: 0.1vw solid $footer-site-rights
+  @media screen and (orientation: portrait)
+    flex-direction: column
 
 .companyInfo
   display: grid
   grid-template-columns: 1fr 1fr 1fr
+  @media screen and (orientation: portrait)
+    grid-template-columns: 1fr
 
 .section
-  width: 230px
+  width: 20%
   text-align: center
   display: flex
   flex-direction: column
   align-items: center
   h3
-    margin-top: 20px
-    margin-bottom: 10px
-    font-size: 1.125em
+    margin-top: 1.5vw
+    margin-bottom: 1vw
+    font-size: 1.5vw
     color: $footer-header
+  @media screen and (orientation: portrait)
+    width: 90%
+    h3
+      margin-top: 4vw
+      font-size: 8vw
+      margin-bottom: 2vw
+
 
 .link, 
 .address
-  font-size: 0.875em
+  font-size: 1.2vw
   color: $secondary
+  @media screen and (orientation: portrait)
+    font-size: 4vw
 
 .copyright
   margin: 0 auto
   width: 93%
-  height: 30px
+  height: 3vw
   display: flex
   justify-content: space-between
   align-items: center
   span
+    font-size: 1.2vw
     color: $footer-site-rights
+  @media screen and (orientation: portrait)
+    position: relative
+    height: 10vw
+    span, .link
+      top: 0vw
+      font-size: 4vw
+      display: flex
+      justify-content: center
+      position: absolute
+      width: 90%
+    span
+      top: 5vw
