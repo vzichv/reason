@@ -1,28 +1,7 @@
 import styles from './application-section.module.sass';
 import { Link } from 'react-router-dom';
 
-const backgrounds = {
-  pc: './porsche-background-image.jpg',
-  tablet: './porsche-background-image-tablets.jpg',
-  telephone: './porsche-background-image-telephones.jpg'
-}
-
 function ApplicationSection(): JSX.Element {
-
-  function getBackground(): string {
-    if (window.innerWidth > 1300) {
-      return backgrounds.pc;
-    }
-    else if (window.innerWidth > 720 && window.innerWidth <= 1300) {
-      return backgrounds.tablet;
-    }
-    else if (window.innerWidth <= 720) {
-      return backgrounds.telephone;
-    }
-    else {
-      return '';
-    }
-  }
 
   return(
     <section className={styles.body}> 
