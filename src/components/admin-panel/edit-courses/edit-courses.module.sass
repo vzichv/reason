@@ -1,0 +1,119 @@
+@import './../../../colors'
+  
+$course-width: 75%
+$price-width: 15%
+$subcategory-width: 90%
+
+$new-element-border-radius: 2vw
+
+$li-height: 3vw
+$field-height: 2.5vw
+
+$margins-between-course-and-price: (100% - ($course-width + $price-width)) / 4
+
+.section
+  height: 35vw
+  width: 100%
+  overflow-y: scroll
+  background-color: $window
+  &::-webkit-scrollbar
+    background-color: $window
+    width: 0.3vw
+  &::-webkit-scrollbar-thumb
+    background-color: $footer-site-rights
+    border-radius: 1vw
+
+.list
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  list-style: none
+  li
+    position: relative
+    display: flex
+    align-items: center
+    width: 100%
+    height: $li-height
+    cursor: pointer
+    justify-content: space-around
+  li:hover
+    background-color: rgba(255, 255, 255, .05)
+    .deleteButton
+      opacity: .5
+
+.default
+  height: $field-height
+  color: rgba(255, 255, 255, .5)
+  background-color: rgba(191, 71, 71, 0)
+  border: 0
+  cursor: pointer
+
+.courseName
+  font-size: 1.6vw
+  width: $course-width
+
+.addCourse
+  width: $course-width
+  height: $field-height - 1vw
+  border-radius: $new-element-border-radius
+  margin-left: -20%
+  background-color: rgba(255, 255, 255, .1)
+  &:hover
+    background-color: rgba(255, 255, 255, .2)
+
+.coursePrice
+  font-size: 1.5vw
+  width: $price-width
+  text-align: right
+  color: rgba(255, 249, 95, .7)
+
+.addPrice 
+  width: $price-width
+  height: $field-height - 1vw
+  border-radius: $new-element-border-radius
+  background-color: rgba(255, 249, 95, .5)
+  &:hover
+    background-color: rgba(255, 249, 95, .6)
+
+.deleteButton
+  background-image: url('./../../../assets/close_white_24dp.svg')
+  background-size: contain
+  background-repeat: no-repeat  
+  border-radius: 1vw
+  opacity: 0
+  width: 2vw
+  height: 2vw
+  &:hover
+    opacity: .6
+    background-color: rgba(255, 255, 255, 0.1)
+
+.subcategoryName
+  margin-left: $margins-between-course-and-price
+  font-size: 1.4vw
+  width: $subcategory-width
+
+.addSubcategory
+  margin-left: $margins-between-course-and-price
+  width: $subcategory-width
+  height: $field-height - 1.1vw
+  border-radius: $new-element-border-radius
+  background-color: rgba(255, 255, 255, .1)
+  &:hover
+    background-color: rgba(255, 255, 255, .2)
+
+
+.saveButton
+  display: block
+  margin: 1% $margins-between-course-and-price 1% auto
+  width: 15%
+  height: 7%
+  border-width: 0
+  border-radius: 2vw
+  font-size: 1.3vw
+  color: rgba(255, 255, 255, .5)
+  background-color: rgba(255, 255, 255, .05)
+  &:hover 
+    cursor: pointer
+    background-color: rgba(255, 255, 255, .10)
