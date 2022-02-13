@@ -1,0 +1,90 @@
+@import './../../../colors'
+  
+.section
+  height: 35vw
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: center 
+  overflow-y: auto
+  &::-webkit-scrollbar
+    background-color: $window
+    width: 0.3vw
+  &::-webkit-scrollbar-thumb
+    background-color: $footer-site-rights
+    border-radius: 1vw
+
+.review
+  display: flex
+  flex-direction: column
+  margin-top: 1vw
+  width: 90%
+  position: relative
+
+.userName
+  width: 96%
+  margin-bottom: 0.3vw
+  border: 0
+  font-size: 2.5vw
+  color: rgba(255, 255, 255, .3)
+  background-color: rgba(255, 255, 255, 0)
+
+.delete
+  position: absolute
+  top: .5vw
+  right: 0
+  width: 2.5vw
+  height: 2.5vw
+  border: 0
+  background-color: rgba(255, 255, 255, 0)
+  background-image: url('./../../../assets/close-white.svg')
+  background-repeat: no-repeat
+  background-size: cover
+  opacity: .2
+  transition: opacity 0.3s
+  &:hover
+    transition: opacity 0.3s
+    opacity: .5
+    cursor: pointer
+  
+.background
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  border-radius: .2vw .6vw .6vw .6vw
+  background-color: rgba(255, 255, 255, .2)
+  overflow: hidden
+
+.text
+  width: 100%
+  height: 9vw
+  padding: .2vw .3vw
+  border: 0
+  font-size: 1.3vw
+  color: rgba(255, 255, 255, .5)
+  background-color: rgba(255, 255, 255, 0)
+
+.footer
+  display: block
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.button
+  display: block
+  margin: 3% 2% 2% 2%
+  width: 20%
+  height: 3vw
+  border-width: 0
+  border-radius: 2vw
+  font-size: 1.3vw
+  color: rgba(255, 255, 255, .5)
+  background-color: rgba(255, 255, 255, .05)
+  transition: background-color 0.3s, color 0.3s
+  &:hover 
+    transition: background-color 0.3s, color 0.3s
+    cursor: pointer
+    background-color: rgba(255, 255, 255, .10)
