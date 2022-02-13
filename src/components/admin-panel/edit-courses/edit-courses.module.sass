@@ -40,8 +40,6 @@ $margins-between-course-and-price: (100% - ($course-width + $price-width)) / 4
     justify-content: space-around
   li:hover
     background-color: rgba(255, 255, 255, .05)
-    .deleteButton
-      opacity: .5
 
 .default
   height: $field-height
@@ -78,16 +76,17 @@ $margins-between-course-and-price: (100% - ($course-width + $price-width)) / 4
     background-color: rgba(255, 249, 95, .6)
 
 .deleteButton
-  background-image: url('./../../../assets/close_white_24dp.svg')
+  background-image: url('./../../../assets/close-white.svg')
   background-size: contain
   background-repeat: no-repeat  
   border-radius: 1vw
-  opacity: 0
+  opacity: .15
   width: 2vw
   height: 2vw
+  transition: opacity .3s
   &:hover
-    opacity: .6
-    background-color: rgba(255, 255, 255, 0.1)
+    transition: opacity .3s
+    opacity: .5
 
 .subcategoryName
   margin-left: $margins-between-course-and-price
